@@ -1,7 +1,6 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2020.7.1)  1 JUL 2020 12:43
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2020.7.1)  1 JUL 2020 13:00
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **CV.tex
 (./CV.tex
@@ -664,10 +663,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 501.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 501.
+ (./CV.bbl
+Underfull \hbox (badness 2469) in paragraph at lines 11--16
+[]\TU/Tinos-Regular.ttf(0)/m/n/10 Xiangyu Liu.  Research on organizational attr
+action of jd.com in the era of smart logistics
+ []
 
-No file CV.bbl.
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 559.
-[2]
+ [2]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 559.
  (./CV.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 559.
@@ -677,10 +681,10 @@ Package rerunfilecheck Info: File `CV.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 559.
  ) 
 Here is how much of TeX's memory you used:
- 25924 strings out of 492922
- 495425 string characters out of 6133408
- 574006 words of memory out of 5000000
- 29840 multiletter control sequences out of 15000+600000
+ 25929 strings out of 492922
+ 495492 string characters out of 6133408
+ 574005 words of memory out of 5000000
+ 29843 multiletter control sequences out of 15000+600000
  532882 words of font info for 48 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  47i,6n,69p,921b,446s stack positions out of 5000i,500n,10000p,200000b,80000s

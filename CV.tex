@@ -48,6 +48,7 @@ breaklinks}
 \newcommand{\Code}[1]{\mbox{\textbf{#1}}}
 \newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
 
+\usepackage{soul}
 
 \begin{filecontents*}{ref.bib}
 	@misc{test,
@@ -72,13 +73,11 @@ breaklinks}
 
 \begin{SubTitle}
 \par
-\href{xiangyu002@e.ntu.edu.sg}
-{EMail: xiangyu002@e.ntu.edu.sg}
+\href{mike.liu@ntu.edu.sg}
+{mike.liu@ntu.edu.sg}
 \,\SubBulletSymbol\,
-Tel: +86\,19857155986
-\,\SubBulletSymbol\,
-\href{\CVWebpage}
-{WeChat: lxy13438107982}
+\href{https://lxyyy.github.io/}
+{lxyyy.github.io}
 \end{SubTitle}
 
 \begin{Body}
@@ -93,11 +92,11 @@ Tel: +86\,19857155986
 {PDF:Education}
 
 \Entry
-{\textbf{Nanyang Technological University}(NTU)},
+{\textbf{Nanyang Technological University}~(NTU)},
 Singapore
 
 \BulletItem
-M.Sc.. in
+M.Sc. in
 {Computer Control and Automation}
 \hfill
 \DatestampYM{2018}{08} --
@@ -111,14 +110,14 @@ Adviser:
 Prof. Danwei Wang
 \SubBulletItem
 Focus:
-Multi-Robot SLAM, Computer Vision.
+Multi-Robot SLAM, Computer Vision
 \SubBulletItem
 Cumulative GPA: 3.88 / 5.0
 \end{Detail}
 
 \BigGap
 \Entry
-{\textbf{University of Electronic Science and Technology of China}(UESTC)},
+{\textbf{University of Electronic Science and Technology of China}~(UESTC)},
 Chengdu, Sichuan, P.R.China
 
 \BulletItem
@@ -135,7 +134,7 @@ B.Eng. in
 Dissertation:
 	{Research on Organizational Attraction of JD.COM in the era of Smart Logistics \cite{lxybachelor2018}}
 \SubBulletItem
-Recommended Postgraduate Qualification,
+Recommended Postgraduate Qualification
 \SubBulletItem
 Cumulative GPA: 3.47 / 4.00
 \end{Detail}
@@ -151,13 +150,14 @@ Cumulative GPA: 3.47 / 4.00
 
 \Entry
 \BulletItem
-Excellent in C/C++, Linux, ROS; Skilled in Python, Matlab.
+C/C++, Linux, ROS, Python and Matlab.
 \BulletItem
-Excellent in robotics perception and navigation.
+Robotics Perception and Navigation.
 \BulletItem
-Good understanding in neural network, course-attending in control theory, control network, etc.
-\BulletItem
-Abundant hands-on experience in robot development.
+Practical skills on mechanical and electronic design for robotics, and abundant hands-on experience in robot development.
+
+% \BulletItem
+% Good understanding in neural network, course-attending in control theory, control network, etc.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% AWARDS & SCHOLARSHIPS %%
@@ -171,7 +171,7 @@ Abundant hands-on experience in robot development.
 
 \Entry
 \textbf{National First Award},
-in National University Electronics Design Contest(NUEDC), 
+in National University Electronics Design Contest~(NUEDC), 
 MoE China
 
 \BulletItem
@@ -240,7 +240,7 @@ Research Assistant
 \begin{Detail}
 \SubBulletItem
 Project:
-Multi Robot Localization, Reconstruction and Exploration
+Multi Robot Localization, Reconstruction and Exploration ~\cite{xiangyu2021coxgraph}~(\textbf{First Author, IROS 2021 Best Paper Award Finalist on Safety, Security, and Rescue Robotics in memory of Motohiro Kisoi})
 \SubBulletItem
 Supervisors:
 Prof. Guofeng Zhang
@@ -293,7 +293,7 @@ RoboMasters Contest Robot Design
 	Robot Contest, Computer Vision, Target Recognition, Item Grabbing
 	\SubBulletItem
 	Patent:
-	A UAV-mounted lightweight grabbing device
+	A UAV-mounted lightweight grabbing device\cite{yijie2016}
 	
 \end{Detail}
 
@@ -330,7 +330,7 @@ National University Electronic Design Contest
 	Robot Contest, Target Recognization, Control
 \end{Detail}
 
-\Gap
+\newpage
 \Entry
 {\textbf{JD.COM X Department}}, JD.COM
 
@@ -487,7 +487,7 @@ Chinese: Native speaker.
 
 \Gap
 \BulletItem
-English: Fluent (IELTS: 6.5(6)).
+English: Fluent (IELTS: 8(7)).
 
 
 %%%%%%%%%%%%%%%%
@@ -518,6 +518,7 @@ E-mail: \url{edwwang@ntu.edu.sg}
 WWW: \url{http://www.ntu.edu.sg/home/edwwang}
 
 
+\Gap
 \BulletItem
 \textbf{Dr Guofeng ZHANG, Professor}
 \newline
@@ -533,20 +534,33 @@ E-mail: \url{zhangguofeng@cad.zju.edu.cn}
 \newline
 WWW: \url{http://www.cad.zju.edu.cn/home/gfzhang}
 
-
 \Gap
 \BulletItem
-\textbf{Dr Liping HE, Professor}
+\textbf{Dr Zhaopeng Cui, Research Professor}
 \newline
-PhD, Professor, School of Mechatronics Engineering,
+College of Computer Science and Technology,
 \newline
-University of Electronic Science and Technology of China,
+Zhejiang University,
 \newline
-Tel.: +86-18118010621
+Tel.: +86 571 88206681
 \newline
-Email: \url{lipinghe@uestc.edu.cn}
+Email: \url{zhpcui@zju.edu.cn}
 \newline
-Address: No.2006, Xiyuan Ave, West Hi-tech Zone, 611731 Chengdu, Sichuan, P. R. China
+https://zhpcui.github.io/
+
+% \Gap
+% \BulletItem
+% \textbf{Dr Liping HE, Professor}
+% \newline
+% PhD, Professor, School of Mechatronics Engineering,
+% \newline
+% University of Electronic Science and Technology of China,
+% \newline
+% Tel.: +86-18118010621
+% \newline
+% Email: \url{lipinghe@uestc.edu.cn}
+% \newline
+% Address: No.2006, Xiyuan Ave, West Hi-tech Zone, 611731 Chengdu, Sichuan, P. R. China
 
 %%%%%%%%%%%%%%%%%%
 %% PUBLICATIONS %%
@@ -561,7 +575,7 @@ Address: No.2006, Xiyuan Ave, West Hi-tech Zone, 611731 Chengdu, Sichuan, P. R. 
 \begingroup
 \renewcommand{\MaxNumberedItem}{[88]}
 
-\nocite{*}
+% \nocite{*}
 \bibliographystyle{plain}
 \bibliography{ref}
 

@@ -48,6 +48,7 @@ breaklinks}
 \newcommand{\Code}[1]{\mbox{\textbf{#1}}}
 \newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
 
+\usepackage{soul}
 
 \begin{filecontents*}{ref.bib}
 	@misc{test,
@@ -72,13 +73,11 @@ breaklinks}
 
 \begin{SubTitle}
 \par
-\href{xiangyu002@e.ntu.edu.sg}
-{EMail: xiangyu002@e.ntu.edu.sg}
+\href{xl142@illinois.edu}
+\large{xl142@illinois.edu}
 \,\SubBulletSymbol\,
-Tel: +86\,19857155986
-\,\SubBulletSymbol\,
-\href{\CVWebpage}
-{WeChat: lxy13438107982}
+\href{https://lxyyy.github.io/}
+\large{\textbf{\underline{lxyyy.github.io}}}
 \end{SubTitle}
 
 \begin{Body}
@@ -93,11 +92,21 @@ Tel: +86\,19857155986
 {PDF:Education}
 
 \Entry
-{\textbf{Nanyang Technological University}(NTU)},
+{\textbf{University of Illinois Urbana-Champaign}}
+
+\BulletItem
+MS. in Aerospace Engineering
+\hfill
+\DatestampYM{2022}{08} --
+now
+
+\BigGap
+\Entry
+{\textbf{Nanyang Technological University}~(NTU)},
 Singapore
 
 \BulletItem
-M.Sc.. in
+M.Sc. in
 {Computer Control and Automation}
 \hfill
 \DatestampYM{2018}{08} --
@@ -105,20 +114,20 @@ M.Sc.. in
 \begin{Detail}
 \SubBulletItem
 Dissertation:
-{Quantitative Trajectory Evaluation Criterion and Long-term Enhancement for Multi-Robot SLAM\cite{xiangyu2019quantitative}}
+{\href{https://www.researchgate.net/publication/340996925_QUANTITATIVE_TRAJECTORY_EVALUATION_CRITERION_AND_LONG-TERM_ENHANCEMENT_FOR_MULTI-ROBOT_SLAM}{\color{blue}{Quantitative Trajectory Evaluation Criterion and Long-term Enhancement for Multi-Robot SLAM}}\cite{xiangyu2019quantitative}}
 \SubBulletItem
 Adviser:
 Prof. Danwei Wang
 \SubBulletItem
 Focus:
-Multi-Robot SLAM, Computer Vision.
+Multi-Robot SLAM, Computer Vision
 \SubBulletItem
 Cumulative GPA: 3.88 / 5.0
 \end{Detail}
 
 \BigGap
 \Entry
-{\textbf{University of Electronic Science and Technology of China}(UESTC)},
+{\textbf{University of Electronic Science and Technology of China}~(UESTC)},
 Chengdu, Sichuan, P.R.China
 
 \BulletItem
@@ -135,7 +144,7 @@ B.Eng. in
 Dissertation:
 	{Research on Organizational Attraction of JD.COM in the era of Smart Logistics \cite{lxybachelor2018}}
 \SubBulletItem
-Recommended Postgraduate Qualification,
+Recommended Postgraduate Qualification
 \SubBulletItem
 Cumulative GPA: 3.47 / 4.00
 \end{Detail}
@@ -151,13 +160,14 @@ Cumulative GPA: 3.47 / 4.00
 
 \Entry
 \BulletItem
-Excellent in C/C++, Linux, ROS; Skilled in Python, Matlab.
+C/C++, Linux, ROS, Python and Matlab.
 \BulletItem
-Excellent in robotics perception and navigation.
+Robotics Perception and Navigation.
 \BulletItem
-Good understanding in neural network, course-attending in control theory, control network, etc.
-\BulletItem
-Abundant hands-on experience in robot development.
+Practical skills on mechanical and electronic design for robotics, and abundant hands-on experience in robot development.
+
+% \BulletItem
+% Good understanding in neural network, course-attending in control theory, control network, etc.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% AWARDS & SCHOLARSHIPS %%
@@ -171,7 +181,7 @@ Abundant hands-on experience in robot development.
 
 \Entry
 \textbf{National First Award},
-in National University Electronics Design Contest(NUEDC), 
+in National University Electronics Design Contest~(NUEDC), 
 MoE China
 
 \BulletItem
@@ -185,7 +195,7 @@ For contest project: panel-ball controlling device
 in RoboMasters National University Robot Contest,
 MoE China \& DJI
 \BulletItem
-For contest project: RM series robots.
+For contest project: RM series robots.\cite{yijie2016}
 \hfill
 \DatestampYM{2015}{10} --
 \DatestampYM{2016}{8}
@@ -196,7 +206,7 @@ For contest project: RM series robots.
 in JD X Robot Challenge Contest,
 JD.COM
 \BulletItem
-For contest project: Automatic Sorting Robot
+For contest project: Automatic Sorting Robot.\cite{lxyjd2017}
 \hfill
 \DatestampYM{2017}{04}
 
@@ -229,6 +239,36 @@ For accumulated outstanding performance in national and provincial contests
 {PDF:Projects}
 
 \Entry
+{\textbf{Robotics Lab, Nanyang Technological University, Singapore}}
+
+\BulletItem
+Research Associate
+\hfill
+\DatestampYM{2021}{07} --
+\DatestampYM{2022}{07}
+\begin{Detail}
+\SubBulletItem
+Project 1:
+AESV: Autonomous Environmental Service Vehicle
+\SubBulletItem
+Brief:
+Cooperating with major network providers, tourist sights and multiply client companies, we are building the next-generation vehicle teleoperation platform.
+With our partners providing island-wide 5G network and vehicles, our platform is able to teleoperate vehicles across the island, with low-latency image and 3D map transmission, even real-time force feedback.
+We are exploring different application scenarios and vehicles for our teleoperation technology, and standardize our platform and its installation process on vehicle.
+\SubBulletItem 
+Project 2:
+Distributed LiDAR: low-cost full-angle obstacle detection sensor module.
+\SubBulletItem
+Brief:
+The most common way to achieve full-angle obstacle detection is to mount lidar or several depth cameras, which turn to be less cost-effective and require high computation resources.
+This project is aimed at development of new sensor modules catering users' demand of cheap, light-weight and flexible solution to obstacle detection.
+Several modules are already ready-to-ship.
+One module with flexible design can adhere to desired surfaces.
+One module with optical fibre conducting light, of which 32 fibres can be embedded in UAV propeller protectors.
+This project has international patents in several countries.
+\end{Detail}
+
+\Entry
 {\textbf{Computer Vision Group}},
 State Key Lab of CAD\&CG, Zhejiang University
 
@@ -240,7 +280,12 @@ Research Assistant
 \begin{Detail}
 \SubBulletItem
 Project:
-Multi Robot Localization, Reconstruction and Exploration
+\href{https://ieeexplore.ieee.org/document/9636645}{\color{blue}Multi Robot Localization, Reconstruction and Exploration}~\cite{xiangyu2021coxgraph}~(\textbf{First Author, IROS 2021 Best Paper Award Finalist on Safety, Security, and Rescue Robotics in memory of Motohiro Kisoi}).
+\SubBulletItem
+Brief:
+We are exploring and pushing the limit of multi robot dense reconstruction and navigation system with higher performance on mapping and functionality of complicated exploration and searching task.
+By integrating recent multi robot localization and optimization methods, and bringing in a new map compression algorithm, my paper proposes a new system able to build dense map with global consistency, robustness and work under less than 100 KB/s of bandwidth.
+
 \SubBulletItem
 Supervisors:
 Prof. Guofeng Zhang
@@ -249,88 +294,8 @@ Focus:
 Multi-Robot SLAM, Cross-Robot Localization, Dense Reconstruction, Navigation
 \end{Detail}
 
-\Gap
-\Entry
-{\textbf{Robotics ADVANCe Laboratory}},
-NTU
 
-\BulletItem
-Master Dissertation
-\hfill
-\DatestampYM{2018}{10} --
-\DatestampYM{2019}{04}
-\begin{Detail}
-\SubBulletItem
-Project:
-Place Recognition and Localization for Multi-Robot SLAM \cite{xiangyu2019quantitative}
-\SubBulletItem
-Supervisors:
-Prof. Danwei Wang
-\SubBulletItem
-Focus:
-SLAM, Multi-Robot SLAM, Computer Vision
-\end{Detail}
-
-\Gap
-\Entry
-{\textbf{RoboMasters Contest Lab}},
-UESTC
-
-\BulletItem
-RoboMasters Contest Robot Design
-\hfill
-\DatestampYM{2015}{10} --
-\DatestampYM{2016}{08}
-\begin{Detail}
-	\SubBulletItem
-	Project:
-	UAV for RM Contest
-	\SubBulletItem
-	Supervisors:
-	Prof. Liping He
-	\SubBulletItem
-	Focus:
-	Robot Contest, Computer Vision, Target Recognition, Item Grabbing
-	\SubBulletItem
-	Patent:
-	A UAV-mounted lightweight grabbing device
-	
-\end{Detail}
-
-\BulletItem
-JDX Robot Challenge \cite{lxyjd2017}
-\hfill
-\DatestampYM{2017}{01} --
-\DatestampYM{2017}{04}
-\begin{Detail}
-	\SubBulletItem
-	Project:
-	Auto-sorting robot
-	\SubBulletItem
-	Supervisors:
-	Prof. Liping He
-	\SubBulletItem
-	Focus:
-	Robot Contest, 3D Vision, Target Recognization, Item Grabbing
-\end{Detail}
-
-\BulletItem
-National University Electronic Design Contest
-\hfill
-\DatestampYM{2017}{08} 
-\begin{Detail}
-	\SubBulletItem
-	Project:
-	Panel-ball Control Device
-	\SubBulletItem
-	Supervisors:
-	Prof. Jiexiong Ding
-	\SubBulletItem
-	Focus:
-	Robot Contest, Target Recognization, Control
-\end{Detail}
-
-\Gap
+% \newpage
 \Entry
 {\textbf{JD.COM X Department}}, JD.COM
 
@@ -344,7 +309,9 @@ Internship, Embedded Algorithm Engineer
 	Project:
 	Auto-Warehouse AGV
 	\SubBulletItem
-	Work: Joined the R\&D group of auto-warehouse AGVs, help to design and debug AGVs for smart logistic application.
+	Work:
+	Joined the R\&D group of auto-warehouse AGVs, help to design and debug AGVs for smart logistic application.
+	Our group in JD X department was responsible for developing, maintaining and upgrading our JDX auto-warehouse AGVs, which are successfully deployed in JD warehouses in several major cities in China.
 	\SubBulletItem
 	Focus:
 	Smart Logistics, AGV.
@@ -393,6 +360,7 @@ College of Computer Science
 	CAD\&CG: Computer Aided Design and Computer Graphics
 	\SubBulletItem
 	Project: Multi Robot Collaborative SLAM
+	\SubBulletItem
 	\SubBulletItem
 	Supervisors:
 	Prof. Guofeng Zhang
@@ -487,7 +455,7 @@ Chinese: Native speaker.
 
 \Gap
 \BulletItem
-English: Fluent (IELTS: 6.5(6)).
+English: Fluent (IELTS: 8(7)).
 
 
 %%%%%%%%%%%%%%%%
@@ -518,6 +486,7 @@ E-mail: \url{edwwang@ntu.edu.sg}
 WWW: \url{http://www.ntu.edu.sg/home/edwwang}
 
 
+\Gap
 \BulletItem
 \textbf{Dr Guofeng ZHANG, Professor}
 \newline
@@ -533,20 +502,33 @@ E-mail: \url{zhangguofeng@cad.zju.edu.cn}
 \newline
 WWW: \url{http://www.cad.zju.edu.cn/home/gfzhang}
 
-
 \Gap
 \BulletItem
-\textbf{Dr Liping HE, Professor}
+\textbf{Dr Zhaopeng Cui, Research Professor}
 \newline
-PhD, Professor, School of Mechatronics Engineering,
+College of Computer Science and Technology,
 \newline
-University of Electronic Science and Technology of China,
+Zhejiang University,
 \newline
-Tel.: +86-18118010621
+Tel.: +86 571 88206681
 \newline
-Email: \url{lipinghe@uestc.edu.cn}
+Email: \url{zhpcui@zju.edu.cn}
 \newline
-Address: No.2006, Xiyuan Ave, West Hi-tech Zone, 611731 Chengdu, Sichuan, P. R. China
+WWW: \url{https://zhpcui.github.io/}
+
+% \Gap
+% \BulletItem
+% \textbf{Dr Liping HE, Professor}
+% \newline
+% PhD, Professor, School of Mechatronics Engineering,
+% \newline
+% University of Electronic Science and Technology of China,
+% \newline
+% Tel.: +86-18118010621
+% \newline
+% Email: \url{lipinghe@uestc.edu.cn}
+% \newline
+% Address: No.2006, Xiyuan Ave, West Hi-tech Zone, 611731 Chengdu, Sichuan, P. R. China
 
 %%%%%%%%%%%%%%%%%%
 %% PUBLICATIONS %%
@@ -561,7 +543,7 @@ Address: No.2006, Xiyuan Ave, West Hi-tech Zone, 611731 Chengdu, Sichuan, P. R. 
 \begingroup
 \renewcommand{\MaxNumberedItem}{[88]}
 
-\nocite{*}
+% \nocite{*}
 \bibliographystyle{plain}
 \bibliography{ref}
 

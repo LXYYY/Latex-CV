@@ -59,6 +59,9 @@ breaklinks}
 \usepackage{etoolbox}
 \patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
 
+\usepackage[backend=biber, sorting=ynt, minnames=2]{biblatex} % 'ynt' sorts by year, name, title
+\addbibresource{ref.bib} % Replace with your .bib file
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% ACTUAL DOCUMENT.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -73,11 +76,11 @@ breaklinks}
 
 \begin{SubTitle}
 \par
-\href{xl142@illinois.edu}
-\large{xl142@illinois.edu}
+\href{liu.xiangyu@ucy.ac.cy}
+\large{liu.xiangyu@ucy.ac.cy}
 \,\SubBulletSymbol\,
-\href{https://lxyyy.github.io/}
-\large{\textbf{\underline{lxyyy.github.io}}}
+\href{https://mikexyl.github.io/}
+\large{\textbf{\underline{mikexyl.github.io}}}
 \end{SubTitle}
 
 \begin{Body}
@@ -92,13 +95,25 @@ breaklinks}
 {PDF:Education}
 
 \Entry
+
+{\textbf{University of Cyprus}}
+\BulletItem
+PhD. in Robotics
+\hfill
+\DatestampYM{2023}{11} -- Present
+\BulletItem
+Supervisor: Prof. Margarita Chli
+\BulletItem
+Vision For Robotics Lab \href{https://v4rl.com/}{\color{blue}v4rl.com}
+
+\BigGap
+
 {\textbf{University of Illinois Urbana-Champaign}}
 
 \BulletItem
-MS. in Aerospace Engineering
+MS. in Aerospace Engineering~(Control \& Dynamic Systems)
 \hfill
-\DatestampYM{2022}{08} --
-now
+\DatestampYM{2022}{08}
 
 \BigGap
 \Entry
@@ -162,12 +177,73 @@ Cumulative GPA: 3.47 / 4.00
 \BulletItem
 C/C++, Linux, ROS, Python and Matlab.
 \BulletItem
-Robotics Perception and Navigation.
+Robotics Perception and Navigation, Reinforcement Learning.
 \BulletItem
 Practical skills on mechanical and electronic design for robotics, and abundant hands-on experience in robot development.
 
 % \BulletItem
 % Good understanding in neural network, course-attending in control theory, control network, etc.
+
+\Section
+{Work\newline
+	Experience}
+{Work Experience}
+{PDF:WorkExperience}
+
+\Entry
+{\textbf{Deka Research and Development Corp.}},
+Manchester, NH
+
+\BulletItem
+Software Engineer Intern~(Path Planning)
+\hfill
+\DatestampYM{2023}{05} --
+\DatestampYM{2023}{08}
+
+\Gap
+\Entry
+{\textbf{Nanyang Technological University}},
+Singapore
+
+
+
+\BulletItem
+Research Associate,
+Robotic Lab
+\hfill
+\DatestampYM{2021}{07} --
+\DatestampYM{2022}{07}
+\begin{Detail}
+	\SubBulletItem
+	Supervisor:
+	Prof. Danwei Wang
+\end{Detail}
+
+\Gap
+\Entry
+{\textbf{Zhejiang University}},
+Hangzhou, China
+
+\BulletItem
+Research Assistant,
+State Key Lab of CAD\&CG,
+College of Computer Science
+\hfill
+\DatestampYM{2020}{07} --
+\DatestampYM{2021}{04}
+\begin{Detail}
+	\SubBulletItem
+	CAD\&CG: Computer Aided Design and Computer Graphics
+	\SubBulletItem
+	Project: Multi Robot Collaborative SLAM
+	\SubBulletItem
+	Supervisors:
+	Prof. Guofeng Zhang
+\end{Detail}
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% AWARDS & SCHOLARSHIPS %%
@@ -179,6 +255,16 @@ Practical skills on mechanical and electronic design for robotics, and abundant 
 {Awards \& Scholarships}
 {PDF:AwardsAndScholarships}
 
+\Entry
+\textbf{IROS21 Best Paper Finalist}, Prague, Czech
+
+\BulletItem
+\href{https://ieeexplore.ieee.org/document/9636645}{\color{blue}Coxgraph: Multi-robot collaborative, globally consistent, online dense reconstruction system.}~\cite{xiangyu2021coxgraph}
+% \hfill
+% \DatestampYM{2022}{9}
+
+
+\Gap
 \Entry
 \textbf{National First Award},
 in National University Electronics Design Contest~(NUEDC), 
@@ -200,33 +286,33 @@ For contest project: RM series robots.\cite{yijie2016}
 \DatestampYM{2015}{10} --
 \DatestampYM{2016}{8}
 
-\Gap
-\Entry
-\textbf{National Bronze Award},
-in JD X Robot Challenge Contest,
-JD.COM
-\BulletItem
-For contest project: Automatic Sorting Robot.\cite{lxyjd2017}
-\hfill
-\DatestampYM{2017}{04}
+% \Gap
+% \Entry
+% \textbf{National Bronze Award},
+% in JD X Robot Challenge Contest,
+% JD.COM
+% \BulletItem
+% For contest project: Automatic Sorting Robot.\cite{lxyjd2017}
+% \hfill
+% \DatestampYM{2017}{04}
 
-\Gap
-\Entry
-\textbf{Awards and Scholarships}, 
-in several university-level contests held in UESTC
+% \Gap
+% \Entry
+% \textbf{Awards and Scholarships}, 
+% in several university-level contests held in UESTC
 
-\hfill
-\DatestampYM{2014}{09} --
-\DatestampYM{2018}{06}
+% \hfill
+% \DatestampYM{2014}{09} --
+% \DatestampYM{2018}{06}
 
-\Gap
-\Entry
-\textbf{Recommended Postgraduate Qualification},
-in UESTC
-\BulletItem
-For accumulated outstanding performance in national and provincial contests
-\hfill
-\DatestampYM{2017}{09}
+% \Gap
+% \Entry
+% \textbf{Recommended Postgraduate Qualification},
+% in UESTC
+% \BulletItem
+% For accumulated outstanding performance in national and provincial contests
+% \hfill
+% \DatestampYM{2017}{09}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -237,6 +323,32 @@ For accumulated outstanding performance in national and provincial contests
 {Projects}
 {Projects}
 {PDF:Projects}
+
+\Entry
+{\textbf{Computer Vision Group}},
+State Key Lab of CAD\&CG, Zhejiang University
+
+\BulletItem
+Research Assistant
+\hfill
+\DatestampYM{2020}{07} --
+\DatestampYM{2021}{04}
+\begin{Detail}
+\SubBulletItem
+Project:
+Multi Robot Localization, Reconstruction and Exploration~\cite{xiangyu2021coxgraph}~(\textbf{First Author, IROS 2021 Best Paper Award Finalist on Safety, Security, and Rescue Robotics in memory of Motohiro Kisoi}).
+\SubBulletItem
+Brief:
+We are exploring and pushing the limit of multi robot dense reconstruction and navigation system with higher performance on mapping and functionality of complicated exploration and searching task.
+By integrating recent multi robot localization and optimization methods, and bringing in a new map compression algorithm, my paper proposes a new system able to build dense map with global consistency, robustness and work under less than 100 KB/s of bandwidth.
+
+\SubBulletItem
+Supervisors:
+Prof. Guofeng Zhang
+\SubBulletItem
+Focus:
+Multi-Robot SLAM, Cross-Robot Localization, Dense Reconstruction, Navigation
+\end{Detail}
 
 \Entry
 {\textbf{Robotics Lab, Nanyang Technological University, Singapore}}
@@ -268,31 +380,7 @@ One module with optical fibre conducting light, of which 32 fibres can be embedd
 This project has international patents in several countries.
 \end{Detail}
 
-\Entry
-{\textbf{Computer Vision Group}},
-State Key Lab of CAD\&CG, Zhejiang University
 
-\BulletItem
-Research Assistant
-\hfill
-\DatestampYM{2020}{07} --
-\DatestampYM{2021}{04}
-\begin{Detail}
-\SubBulletItem
-Project:
-\href{https://ieeexplore.ieee.org/document/9636645}{\color{blue}Multi Robot Localization, Reconstruction and Exploration}~\cite{xiangyu2021coxgraph}~(\textbf{First Author, IROS 2021 Best Paper Award Finalist on Safety, Security, and Rescue Robotics in memory of Motohiro Kisoi}).
-\SubBulletItem
-Brief:
-We are exploring and pushing the limit of multi robot dense reconstruction and navigation system with higher performance on mapping and functionality of complicated exploration and searching task.
-By integrating recent multi robot localization and optimization methods, and bringing in a new map compression algorithm, my paper proposes a new system able to build dense map with global consistency, robustness and work under less than 100 KB/s of bandwidth.
-
-\SubBulletItem
-Supervisors:
-Prof. Guofeng Zhang
-\SubBulletItem
-Focus:
-Multi-Robot SLAM, Cross-Robot Localization, Dense Reconstruction, Navigation
-\end{Detail}
 
 
 % \newpage
@@ -321,187 +409,125 @@ Internship, Embedded Algorithm Engineer
 %% OTHER WORK EXPERIENCE %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\Section
-{Work\newline
-	Experience}
-{Work Experience}
-{PDF:WorkExperience}
-
-\Entry
-{\textbf{Nanyang Technological University}},
-Singapore
-
-\BulletItem
-Research Associate,
-Robotic Lab
-\hfill
-\DatestampYM{2021}{07} --
-Now
-\begin{Detail}
-	\SubBulletItem
-	Supervisor:
-	Prof. Danwei Wang
-\end{Detail}
-
-\Gap
-\Entry
-{\textbf{Zhejiang University}},
-Hangzhou, China
-
-\BulletItem
-Research Assistant,
-State Key Lab of CAD\&CG,
-College of Computer Science
-\hfill
-\DatestampYM{2020}{07} --
-\DatestampYM{2021}{04}
-\begin{Detail}
-	\SubBulletItem
-	CAD\&CG: Computer Aided Design and Computer Graphics
-	\SubBulletItem
-	Project: Multi Robot Collaborative SLAM
-	\SubBulletItem
-	\SubBulletItem
-	Supervisors:
-	Prof. Guofeng Zhang
-\end{Detail}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %% CAMPUS ACTIVITIES %%
 %%%%%%%%%%%%%%%%%%%%%%%
 
-\Section
-{Campus Activities}
-{Campus Activities}
-{PDF:CampusActivities}
+% \Section
+% {Campus Activities}
+% {Campus Activities}
+% {PDF:CampusActivities}
 
-\Entry
-{\textbf{Work-Zone of Innovation And Entrepreneurship}},
-School of Management and Economics, 
-UESTC
+% \Entry
+% {\textbf{Work-Zone of Innovation And Entrepreneurship}},
+% School of Management and Economics, 
+% UESTC
 
-\BulletItem
-Chief Manager
-\hfill
-\DatestampYM{2015}{07} --
-\DatestampYM{2017}{09}
-\begin{Detail}
-\SubBulletItem
-Improved the talent-training concept and mechanism.
-\SubBulletItem
-Led the team to finish 11 university-level projects, and won over 10 prizes including 3 national
- and 1 provincial prizes.
-\end{Detail}
+% \BulletItem
+% Chief Manager
+% \hfill
+% \DatestampYM{2015}{07} --
+% \DatestampYM{2017}{09}
+% \begin{Detail}
+% \SubBulletItem
+% Improved the talent-training concept and mechanism.
+% \SubBulletItem
+% Led the team to finish 11 university-level projects, and won over 10 prizes including 3 national
+%  and 1 provincial prizes.
+% \end{Detail}
 
-\Gap
-{\textbf{Gymguys Training and Fitness Company}},
-Chicago, 
-USA
+% \Gap
+% {\textbf{Gymguys Training and Fitness Company}},
+% Chicago, 
+% USA
 
-\BulletItem
-Internship
-\hfill
-\DatestampYM{2015}{07} --
-\DatestampYM{2015}{08}
-\begin{Detail}
-	\SubBulletItem
-	Marketing work as an assistant of the marketing director.
-\end{Detail}
+% \BulletItem
+% Internship
+% \hfill
+% \DatestampYM{2015}{07} --
+% \DatestampYM{2015}{08}
+% \begin{Detail}
+% 	\SubBulletItem
+% 	Marketing work as an assistant of the marketing director.
+% \end{Detail}
 
-\Gap
-{\textbf{SMU Entrepreneurship Program}},
-Singapore Management University,
-Singapore
+% \Gap
+% {\textbf{SMU Entrepreneurship Program}},
+% Singapore Management University,
+% Singapore
 
-\BulletItem
-Course Program
-\hfill
-\DatestampYM{2016}{01} --
-\DatestampYM{2016}{02}
-\begin{Detail}
-\SubBulletItem
-Attended SMU entrepreneurship courses, including innovation mind, entrepreneurship management, and team management, etc.
-\SubBulletItem
-Finished the business plan training program with the entrepreneurship idea of “THE LAST MILE”,which was focusing on problems of O2O delivery.
-\end{Detail}
-
-
-%%%%%%%%%%%%%%%
-%% LANGUAGES %%
-%%%%%%%%%%%%%%%
-
-\Section
-{Languages}
-{Languages}
-{PDF:Languages}
-
-\BulletItem
-Chinese: Native speaker.
-
-\Gap
-\BulletItem
-English: Fluent (IELTS: 8(7)).
+% \BulletItem
+% Course Program
+% \hfill
+% \DatestampYM{2016}{01} --
+% \DatestampYM{2016}{02}
+% \begin{Detail}
+% \SubBulletItem
+% Attended SMU entrepreneurship courses, including innovation mind, entrepreneurship management, and team management, etc.
+% \SubBulletItem
+% Finished the business plan training program with the entrepreneurship idea of “THE LAST MILE”,which was focusing on problems of O2O delivery.
+% \end{Detail}
 
 
 %%%%%%%%%%%%%%%%
 %% REFERENCES %%
 %%%%%%%%%%%%%%%%
 
-\Section
-{References}
-{References}
-{PDF:References}
+% \Section
+% {References}
+% {References}
+% {PDF:References}
 
-\Gap
-\BulletItem
-\textbf{Dr Danwei WANG, Professor}
-\newline
-Division of Control and Instrumentation,
-School of Electrical and Electrical Engineering, Block S2
-\newline
-Nanyang Technological University,
-Nanyang Avenue, Singapore 639798
-\newline
-Office phone: (+65) 6790 5376
-\newline
-School fax: (+65) 6793 3318
-\newline
-E-mail: \url{edwwang@ntu.edu.sg}
-\newline
-WWW: \url{http://www.ntu.edu.sg/home/edwwang}
+% \Gap
+% \BulletItem
+% \textbf{Dr Danwei WANG, Professor}
+% \newline
+% Division of Control and Instrumentation,
+% School of Electrical and Electrical Engineering, Block S2
+% \newline
+% Nanyang Technological University,
+% Nanyang Avenue, Singapore 639798
+% \newline
+% Office phone: (+65) 6790 5376
+% \newline
+% School fax: (+65) 6793 3318
+% \newline
+% E-mail: \url{edwwang@ntu.edu.sg}
+% \newline
+% WWW: \url{http://www.ntu.edu.sg/home/edwwang}
 
 
-\Gap
-\BulletItem
-\textbf{Dr Guofeng ZHANG, Professor}
-\newline
-Computer Vision Group, State Key Lab of CAD\&CG
-\newline
-East Building 1A-509, ZijinGang Campus, Zhejiang University
-\newline
-Office phone: (+86) 571-88208701
-\newline
-School fax: (+86) 571-88206680
-\newline
-E-mail: \url{zhangguofeng@cad.zju.edu.cn}
-\newline
-WWW: \url{http://www.cad.zju.edu.cn/home/gfzhang}
+% \Gap
+% \BulletItem
+% \textbf{Dr Guofeng ZHANG, Professor}
+% \newline
+% Computer Vision Group, State Key Lab of CAD\&CG
+% \newline
+% East Building 1A-509, ZijinGang Campus, Zhejiang University
+% \newline
+% Office phone: (+86) 571-88208701
+% \newline
+% School fax: (+86) 571-88206680
+% \newline
+% E-mail: \url{zhangguofeng@cad.zju.edu.cn}
+% \newline
+% WWW: \url{http://www.cad.zju.edu.cn/home/gfzhang}
 
-\Gap
-\BulletItem
-\textbf{Dr Zhaopeng Cui, Research Professor}
-\newline
-College of Computer Science and Technology,
-\newline
-Zhejiang University,
-\newline
-Tel.: +86 571 88206681
-\newline
-Email: \url{zhpcui@zju.edu.cn}
-\newline
-WWW: \url{https://zhpcui.github.io/}
+% \Gap
+% \BulletItem
+% \textbf{Dr Zhaopeng Cui, Research Professor}
+% \newline
+% College of Computer Science and Technology,
+% \newline
+% Zhejiang University,
+% \newline
+% Tel.: +86 571 88206681
+% \newline
+% Email: \url{zhpcui@zju.edu.cn}
+% \newline
+% WWW: \url{https://zhpcui.github.io/}
 
 % \Gap
 % \BulletItem
@@ -521,20 +547,20 @@ WWW: \url{https://zhpcui.github.io/}
 %% PUBLICATIONS %%
 %%%%%%%%%%%%%%%%%%
 
-\Section
-{Publications}
-{Publications}
-{PDF:Publications}
+% \Section
+% {Publications}
+% {Publications}
+% {PDF:Publications}
 
 % Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
-\begingroup
-\renewcommand{\MaxNumberedItem}{[88]}
+% \begingroup
+% \renewcommand{\MaxNumberedItem}{[88]}
 
-% \nocite{*}
-\bibliographystyle{plain}
-\bibliography{ref}
+\nocite{*}
 
-\endgroup
+\printbibliography[title=Publications]
+
+% \endgroup
 
 
 \end{Body}
